@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cto1ouwht0so0"]
+[gd_scene load_steps=2 format=3 uid="uid://cto1ouwht0so0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sgp6g"]
 
 [node name="BASE" type="Control"]
 layout_mode = 3
@@ -7,3 +9,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Back" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_sgp6g")
+
+[node name="MarginContainer" type="MarginContainer" parent="Back"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="Lines" type="VBoxContainer" parent="Back/MarginContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Back/MarginContainer/Lines"]
+layout_mode = 2
