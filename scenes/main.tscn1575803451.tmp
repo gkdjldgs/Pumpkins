@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cto1ouwht0so0"]
 
 [ext_resource type="Script" uid="uid://bc4mflmx3x8g3" path="res://scenes/BASE.gd" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://c03lk3voml6qk" path="res://scenes/inputs..gd" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://bpxh03jd1diyt" path="res://scenes/inputs.gd" id="1_o5qli"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgp6g"]
 bg_color = Color(0.30021536, 0.11982181, 0.011851163, 1)
@@ -49,6 +49,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_o5qli")
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.12
+script = ExtResource("1_o5qli")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Back/MarginContainer/Lines/inputs"]
 layout_mode = 2
@@ -57,13 +58,11 @@ layout_mode = 2
 layout_mode = 2
 text = " > "
 
-[node name="INPUTBOX" type="LineEdit" parent="Back/MarginContainer/Lines/inputs/HBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="Back/MarginContainer/Lines/inputs/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o5qli")
 max_length = 50
-keep_editing_on_text_submit = true
-script = ExtResource("2_0wfyh")
 
-[connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" to="." method="_on_line_edit_text_submitted"]
-[connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" to="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" method="_on_text_submitted"]
+[connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/LineEdit" to="Back/MarginContainer/Lines/inputs" method="_on_line_edit_text_submitted"]
