@@ -31,6 +31,18 @@ func ment(first_word: String):
 			
 		A) Use the street
 		B) Roll on the sidewalk"
+	
+	if first_word == 'a' and stage == 1:
+		stage = 2
+		return 'Unexpectedly you favour using the street over the perfectly good sidewalk
+		Expectedly you get hit by a car and a tiny little pumpkin goes flying into the sky.
+		
+		"Who would have thought jayrolling was bad? You fly through the air but realize, you have to LAND!!!
+		Looking below you ponder your options and choose to land on:
+		
+		A) An unwilling particpants random house
+		B) Stinky Garbage Dump(the stench reaches to the heavens)"
+		C) Who needs gravity? '
 
 func help() -> String:
 	return "You can use: go [direction], help"
