@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cto1ouwht0so0"]
+[gd_scene load_steps=7 format=3 uid="uid://cto1ouwht0so0"]
 
 [ext_resource type="Script" uid="uid://bc4mflmx3x8g3" path="res://scenes/BASE.gd" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://c03lk3voml6qk" path="res://scenes/inputs..gd" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://beg7yhc8pmxd1" path="res://scenes/commands.gd" id="3_sugp2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgp6g"]
 bg_color = Color(0.26824197, 0.15008056, 0.011275374, 1)
@@ -50,7 +51,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_o5qli")
 layout_mode = 2
 
 [node name="HBoxContainer" type="VBoxContainer" parent="Back/MarginContainer/Lines/Textinfo/ScrollContainer"]
+custom_minimum_size = Vector2(1000, 100)
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 20
 
@@ -73,6 +76,9 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_o5qli")
 max_length = 50
 keep_editing_on_text_submit = true
 script = ExtResource("2_0wfyh")
+
+[node name="Commands" type="Node" parent="."]
+script = ExtResource("3_sugp2")
 
 [connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" to="." method="_on_line_edit_text_submitted"]
 [connection signal="text_submitted" from="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" to="Back/MarginContainer/Lines/inputs/HBoxContainer/INPUTBOX" method="_on_text_submitted"]

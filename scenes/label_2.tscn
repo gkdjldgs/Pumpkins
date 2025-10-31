@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://myfj8m2f4lex"]
+
+[node name="Label2" type="Label"]
+theme_override_colors/font_color = Color(1, 0.60249186, 0.35275438, 1)
+theme_override_font_sizes/font_size = 25
+text = " Game OUTPUT"
+autowrap_mode = 3
