@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpvcwu10cnsjv"]
+
+[ext_resource type="Script" uid="uid://bj52a0ujbv3ov" path="res://scenes/dlabels.gd" id="1_obfpl"]
+
+[node name="hrows" type="VBoxContainer"]
+size_flags_horizontal = 3
+script = ExtResource("1_obfpl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92789817, 0.26792392, 0.13913319, 1)
+theme_override_font_sizes/font_size = 20
+text = "  > USER INPUT"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.60249186, 0.35275438, 1)
+theme_override_font_sizes/font_size = 25
+text = " Game OUTPUT"
