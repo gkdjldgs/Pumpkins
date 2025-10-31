@@ -1,6 +1,6 @@
 extends Node
 
-
+@export var stage := 0
 func command(input: String):
 	var words = input.split(" ", false)
 	if words.size() == 0:
@@ -12,19 +12,25 @@ func command(input: String):
 	if words.size() > 1:
 		second_word = words[1].to_lower()
 	match first_word:
-		'move':
-			return ment(second_word)
-		'help':
-			return help()
-		_:
-			return "WRONG command, one more time? "
+			'a':
+				return ment(first_word)
+			'b':
+				return ment(first_word)
+			'help':
+				return help()
+			_:
+				return "WRONG command, one more time? "
 
 
-func ment(second_word: String):
-	if second_word == "":
-		return "What?"
+func ment(first_word: String):
 	
-	return "You move %s" % second_word
+	if first_word == 'a' and stage == 0:
+		stage = 1
+		return "You start to move your little body forwards, but realize you have to make an important decision.
+		Do you choose to:
+			
+		A) Use the street
+		B) Roll on the sidewalk"
 
 func help() -> String:
 	return "You can use: go [direction], help"

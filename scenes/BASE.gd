@@ -4,6 +4,7 @@ const Moreresponse = preload('res://scenes/label_2.tscn')
 const InputResponse = preload('res://scenes/dlabels.tscn')
 #	loading in important variables that are used throughout the script
 @export var mlr := int(30)
+
 # reaching through the scene tree to use important values for the game
 @onready var command_process = $Commands
 @onready var rows = $Back/MarginContainer/Lines/Textinfo/ScrollContainer/HBoxContainer
@@ -13,7 +14,13 @@ const InputResponse = preload('res://scenes/dlabels.tscn')
 func _ready() -> void:
 	scrolls.connect('changed', handle_scroll_changed)
 	var starts = Moreresponse.instantiate()
-	starts.text = "You eyes drift open, as if rising from a slumber. The sounds of Halloween fill your ears as you come to the realization that compared to them, you are a pumpkin. - Type help or follow the prompts to view your avaliable actions"
+	starts.text = "You eyes drift open, as if rising from a slumber. The sounds of Halloween fill your ears as you come to the realization that compared to them, you are a pumpkin. What do you do?
+	- Follow the prompts to advance the story, usually in multiple choice format
+	
+	A) Look around
+	B) Roll forward aimlessly"
+	
+	
 	add_response(starts)
 	
 func handle_scroll_changed():
