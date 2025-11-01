@@ -32,7 +32,7 @@ func ment(first_word: String):
 		A) Use the street
 		B) Roll on the sidewalk"
 	
-	if first_word == 'a' and stage == 1:
+	elif first_word == 'a' and stage == 1:
 		stage = 2
 		return 'Unexpectedly you favour using the street over the perfectly good sidewalk
 		Expectedly you get hit by a car and a tiny little pumpkin goes flying into the sky.
@@ -43,6 +43,13 @@ func ment(first_word: String):
 		A) An unwilling particpants random house
 		B) Stinky Garbage Dump(the stench reaches to the heavens)"
 		C) Who needs gravity? '
+		
+	elif first_word == 'a' and stage == 2:
+		stage = 3
+		return "As gravity takes hold you choose to drift towards the perfectly, fine looking pastel grey house, with a cozy and clean looking design that you can't help but notice..
+		ESPECIALLY SINCE YOUR BARRELING INTO IT'S DELICATELY CRAFTED SHINGLES.
+		WOOD SPLINTERS AND AMAZINGLY YOU BOUNCE OFF A COUCH AND LAND ON THE FLOOR, UNHARMED.
+		You feel a bit shaken, and your leaves sink a bit in relief as you take a moment to relax "
 
 func help() -> String:
 	return "You can use: go [direction], help"
