@@ -17,7 +17,7 @@ config/icon="res://images_or_imports/icon.svg"
 
 [autoload]
 
-autoload="*res://scenes/variable.gd"
+autoload="*res://variable.gd"
 
 [editor_plugins]
 

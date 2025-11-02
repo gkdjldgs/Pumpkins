@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpvcwu10cnsjv"]
 
-[ext_resource type="Script" uid="uid://bj52a0ujbv3ov" path="res://scenes/dlabels.gd" id="1_obfpl"]
-[ext_resource type="PackedScene" uid="uid://myfj8m2f4lex" path="res://scenes/label_2.tscn" id="2_n4v0p"]
+[ext_resource type="Script" uid="uid://bj52a0ujbv3ov" path="res://dlabels.gd" id="1_obfpl"]
+[ext_resource type="PackedScene" uid="uid://myfj8m2f4lex" path="res://label_2.tscn" id="2_n4v0p"]
 
 [node name="hrows" type="VBoxContainer"]
 size_flags_horizontal = 3

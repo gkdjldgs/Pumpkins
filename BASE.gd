@@ -1,7 +1,7 @@
 extends Control
 
-const Moreresponse = preload('res://scenes/label_2.tscn')
-const InputResponse = preload('res://scenes/dlabels.tscn')
+const Moreresponse = preload('res://label_2.tscn')
+const InputResponse = preload('res://dlabels.tscn')
 #	loading in important variables that are used throughout the script
 @export var mlr := int(30)
 

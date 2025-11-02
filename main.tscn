@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://cto1ouwht0so0"]
 
-[ext_resource type="Script" uid="uid://bc4mflmx3x8g3" path="res://scenes/BASE.gd" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://c03lk3voml6qk" path="res://scenes/inputs..gd" id="2_0wfyh"]
-[ext_resource type="Script" uid="uid://beg7yhc8pmxd1" path="res://scenes/commands.gd" id="3_sugp2"]
-[ext_resource type="Script" uid="uid://cujg6mbgxxgg7" path="res://scenes/variable.gd" id="4_jyhfs"]
+[ext_resource type="Script" uid="uid://bc4mflmx3x8g3" path="res://BASE.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://c03lk3voml6qk" path="res://inputs..gd" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://beg7yhc8pmxd1" path="res://commands.gd" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://cujg6mbgxxgg7" path="res://variable.gd" id="4_jyhfs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgp6g"]
 bg_color = Color(0.26824197, 0.15008056, 0.011275374, 1)
