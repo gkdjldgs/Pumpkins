@@ -47,8 +47,23 @@ func command(input: String) -> String:
 				A) Stay still
 				B) Hide (Under the bed)
 				C) Attack (The Guy)
+			
 					"
 			
+			elif autoload.stage == 4:
+				autoload.stage = 5
+				return 'He IS very angry, are you sure? He surveys his room, 
+				the exquisite walls shattered by your pumpkin girth
+				and fails to notice use, as he faints out of shock. 
+				So now what?
+				
+				A) Stay still
+				B) ESCAPE
+				C) PREEEMPTIVE STRIKE'
+			
+			elif autoload.stage == 5:
+				autoload.stage = 6
+				return 'Hours pass, his snoring drones into your nonexistent ears'
 			else:
 				return 'Wrong Command, try again?'
 	
@@ -102,8 +117,8 @@ func command(input: String) -> String:
 				
 				Mainly up though? At this point gravity has rejected you,
 				and with no way to stop, eventually you freeze eternally in space.
-				The last words you would say would be AHHHHH I am so COLD!!!,
-				 thankfully you are a pumpkin thou
+				The last words you would say would be "AHHHHH I am so COLD!!!",
+				Thankfully you are a pumpkin thou
 				
 				ENDING 1 ACHIEVED: "Eventually, Kars stopped thinking..." '
 				
