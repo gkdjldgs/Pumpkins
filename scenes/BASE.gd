@@ -36,10 +36,11 @@ func _on_line_edit_text_submitted(new_text: String) -> void:
 	
 	var isponse = InputResponse.instantiate()
 	var response = command_process.command(new_text)
+	print(response)
 	isponse.set_text(new_text, response)
 	rows.add_child(isponse)
 	add_response(isponse)
-
+	print(autoload.stage)
 func add_response(response: Control):
 	rows.add_child(response)
 #if amount of lines excceds set limit delete oldest lines

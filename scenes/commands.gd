@@ -1,6 +1,6 @@
 extends Node
 
-@export var stage := 0
+var stage = autoload.stage
 func command(input: String):
 	var words = input.split(" ", false)
 	if words.size() == 0:
@@ -14,11 +14,15 @@ func command(input: String):
 	match first_word:
 			'a':
 				return ment(first_word)
+				print(words)
+			
 			'b':
-				return ment(first_word)
+				return bent(first_word)
+				print(words)
 			
 			'c':
 				return ment(first_word)
+				print(words)
 				
 			'help':
 				return help()
@@ -27,26 +31,18 @@ func command(input: String):
 
 
 func ment(first_word: String):
-	
-	if first_word == 'b' and stage == 0:
-		stage = 1
-		return "You start to move your little body forwards, but realize you have to make an important decision.
-		Do you choose to:
-			
-		A) Use the street
-		B) Roll on the sidewalk"
-	
-	elif first_word == 'a' and stage == 1:
-		stage = 2
+	if stage == 1:
+		
 		return 'Unexpectedly you roll on over and start using the street instead of the sidewalk
 		As you roll forward you start to look around this spooky night, wondering what to do next?
-		
+			
 		A) You are on the street
 		B) You get hit by a car
-		C) You get sent flying'
+		C) You get sent FLYING '
+		autoload.stage = 2
+	
+	elif stage == 2:
 		
-	elif first_word == 'a' or first_word == 'b' or first_word == 'c' and stage == 2:
-		stage = 3
 		return 'Hold on, these options seem to be wrong...
 		Anyways the impact hurls you through the sky like a rocket
 		The view is honestly pretty good
@@ -55,10 +51,11 @@ func ment(first_word: String):
 		
 		A) Crash an unwilling particpants random house
 		B) Cushion your body in a Stinky Garbage Dump
-		   (The stench reaches to the heavens)
-		C) Who needs gravity?'
-		
-	elif first_word == 'a' and stage == 3:
+		    (The stench reaches to the heavens)
+		C) Who needs gravity? '
+		autoload.stage = 3
+
+	elif stage == 3:
 		stage = 4
 		return "As gravity takes hold you choose to drift towards the perfectly, fine looking pastel grey house, with a cozy and clean looking design that you can't help but notice..
 		ESPECIALLY SINCE YOUR BARRELING INTO IT'S DELICATELY CRAFTED SHINGLES.
@@ -68,9 +65,29 @@ func ment(first_word: String):
 		followed by the entrance of the angriest man you have seen in your life.
 		YOU:
 			"
+		stage = 4
+func bent(first_word: String):
 		
+	if stage == 0:
+		return "You start to move your little body forwards, but realize you have to make an important decision.
+		Do you choose to:
+					
+		A) Use the street
+		B) Roll on the sidewalk"
+		autoload.stage = 1
+	elif stage == 1:
+		return "You walk on the sidewalk"
+	elif stage == 3:
+		return "Hold on, these options seem to be wrong...
+		Anyways the impact hurls you through the sky like a rocket
+		The view is honestly pretty good
+		but you realize, GRAVITY oh NOO :(
+		Looking below you ponder your (real) options and choose to:
 		
-
+		A) Crash an unwilling particpants random house
+		B) Cushion your body in a Stinky Garbage Dump
+		    (The stench reaches to the heavens)
+		C) Who needs gravity?"
 		
 
 		
