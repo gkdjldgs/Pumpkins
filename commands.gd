@@ -63,7 +63,36 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 5:
 				autoload.stage = 6
-				return 'Hours pass, his snoring drones into your nonexistent ears'
+				return 'Hours pass, his snoring drones into your nonexistent ears as you stay ever so
+				carefully still. Your mind stops thinking, you do not even notice when he picks your
+				body up and carries you over to the compost bin.
+				
+				What can you do now?
+				
+				A) STAY STILL
+				B) NOT STAY STILL'
+				
+			elif autoload.stage == 6:
+				
+				autoload.stage = -1
+				return 'The stench of the compost bin is a familar friend to you.
+				You have grown to enjoy the cushion and warmth the rotting food
+				provides as you drift from this existance, withering away.
+				Through it all you absoultly refuse to move, not even a bit.
+				I hope you enjoy this.
+				
+				ENDING 2: Nothingness
+				
+				A) Restart?'
+			
+			elif autoload.stage  == -1:
+				autoload.stage = 0
+				get_tree().reload_current_scene()
+				return 'You will be sent back to the beginning'
+				
+				
+				
+					
 			else:
 				return 'Wrong Command, try again?'
 	
@@ -93,8 +122,23 @@ func command(input: String) -> String:
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
 				
+			elif autoload.stage == 6:
+				autoload.stage = -1
+				return 'At the last second you muster up the courage to act.
+				Unfortunately for you that mainly comes down to bouncing up and
+				down a lot (but you re really good at it)
+				Unable to open doors due to your lack of hands, you fade away
+				You took action too late, and paid the price.
+				
+				ENDING 3 ACHIEVED: Too little, too late
+				
+				A) Restart?'
+				
+				
 			else:
 				return 'Wrong Command, try again?'
+				
+			
 		
 		# ALL C PATH OPTIONS
 		'c':
