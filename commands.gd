@@ -35,7 +35,7 @@ func command(input: String) -> String:
 
 			elif autoload.stage == 3:
 				autoload.stage = 4
-				return "As gravity takes hold you choose to drift towards the perfectly,
+				return "As gravity takes hold you choose to drift towards a perfectly,
 				fine looking pastel grey house, with a cozy and clean looking design that you can't help but notice..
 				ESPECIALLY SINCE YOUR BARRELING INTO IT'S DELICATELY CRAFTED SHINGLES.
 				WOOD SPLINTERS AND AMAZINGLY YOU BOUNCE OFF A COUCH AND LAND ON THE FLOOR, UNHARMED.
@@ -45,7 +45,7 @@ func command(input: String) -> String:
 				YOU:
 				
 				A) Stay still
-				B) Hide (Under the bed)
+				B) Escape 
 				C) Attack (The Guy)
 			
 					"
@@ -104,10 +104,10 @@ func command(input: String) -> String:
 				Do you choose to:
 							
 				A) Use the street
-				B) Roll on the sidewalk"
+				B) Roll on the sidewalk(WIP)"
 				
-			elif autoload.stage == 1:
-				return "You walk on the sidewalk"
+			#elif autoload.stage == 1:
+				#return "You walk on the sidewalk"
 				
 			elif autoload.stage == 2:
 				autoload.stage = 3
@@ -122,15 +122,27 @@ func command(input: String) -> String:
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
 				
+			elif autoload.stage == 5:
+				autoload.stage = -1
+				return "You quietly roll through the house, 
+				and with the power of even more property damage
+				(You jump through his window) you've done it, you've ESCAPED!!
+				You absorb the cool air of the night in your gourdy body,
+				and escape to your freedom.
+				
+				ENDING 4 ACHIEVED: Sneak 100
+				
+				A) Restart? "
+				
 			elif autoload.stage == 6:
 				autoload.stage = -1
 				return 'At the last second you muster up the courage to act.
 				Unfortunately for you that mainly comes down to bouncing up and
-				down a lot (but you re really good at it)
+				down a lot (but youre really good at it)
 				Unable to open doors due to your lack of hands, you fade away
-				You took action too late, and paid the price.
+				You take your actions too late, and paid the price.
 				
-				ENDING 3 ACHIEVED: Too little, too late
+				ENDING 3 ACHIEVED: Too little, Too late
 				
 				A) Restart?'
 				
@@ -162,9 +174,40 @@ func command(input: String) -> String:
 				Mainly up though? At this point gravity has rejected you,
 				and with no way to stop, eventually you freeze eternally in space.
 				The last words you would say would be "AHHHHH I am so COLD!!!",
-				Thankfully you are a pumpkin thou
+				Thankfully you are a pumpkin, no pain.
 				
-				ENDING 1 ACHIEVED: "Eventually, Kars stopped thinking..." '
+				ENDING 1 ACHIEVED: "Eventually, Kars stopped thinking..."
+				
+				A) Restart? '
+				
+			elif autoload.stage == 4:
+				autoload.stage = -1
+				return 'You try and attack him, but just think about this
+				He is literally the angriest person on the planet right now and 
+				you are the perfect outlet for his anger. His attack is a 
+				CRITICAL HIT, and you lie scattered among the walls
+				
+				ENDING 7 ACHIEVED: Its just a matter of skill
+				
+				A) Restart? '
+				
+			elif autoload.stage == 5:
+				autoload.stage = -1
+				return "He's sleeping so soundly, and with a hefty STOMP from you
+				his sleeping becomes eternally undisturbed. You've done it, you've
+				been given the freedom you desired. At a cost
+				
+				ENDING 6 ACHIEVED: SURVI-
+				
+				You know you're a wanted pumpkin now? The police find you quickly,
+				putting you under arrest for illegal activites. Looks like your
+				freedom is gone, once again. The jury is ruthless, the evidence
+				is overwhelming, and you get sentenced to the worse setence:
+				PUMPKIN PIE
+				
+				ENDING 6 ACHIEVED: JUSTICE
+				
+				A) Try again?"
 				
 			else:
 				return "Wrong Command, try again?"

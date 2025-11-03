@@ -14,10 +14,13 @@ const InputResponse = preload('res://dlabels.tscn')
 func _ready() -> void:
 	scrolls.connect('changed', handle_scroll_changed)
 	var starts = Moreresponse.instantiate()
-	starts.text = "You eyes drift open, as if rising from a slumber. The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are a pumpkin. What do you do?
+	starts.text = "You eyes drift open, as if rising from a slumber. 
+	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are a pumpkin.
+	 
+	What do you do?
 	- Follow the prompts to advance the story, usually in multiple choice format
 	
-	A) Look around
+	A) Look around(NOT WORKING)
 	B) Roll forward aimlessly"
 	
 	
