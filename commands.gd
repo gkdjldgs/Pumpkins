@@ -36,12 +36,13 @@ func command(input: String) -> String:
 			elif autoload.stage == 3:
 				autoload.stage = 4
 				return "As gravity takes hold you choose to drift towards a perfectly,
-				fine looking pastel grey house, with a cozy and clean looking design that you can't help but notice..
-				ESPECIALLY SINCE YOUR BARRELING INTO IT'S DELICATELY CRAFTED SHINGLES.
+				fine looking house, that you can't help but notice..
+				ESPECIALLY SINCE YOUR BARRELING INTO IT'S WALLSS.
 				WOOD SPLINTERS AND AMAZINGLY YOU BOUNCE OFF A COUCH AND LAND ON THE FLOOR, UNHARMED.
 				You feel a bit shaken, and your leaves sink a bit in relief as you take a moment to relax
 				cut short by the abrupt opening of the bedroom door, 
-				followed by the entrance of the angriest man you have seen in your life.
+				Followed by the entrance of the angriest man you have seen
+				(CAUSE HIS HOUSE IS BROKEN)
 				YOU:
 				
 				A) Stay still
