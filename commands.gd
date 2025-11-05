@@ -9,7 +9,15 @@ func command(input: String) -> String:
 	var first_word = words[0].to_lower()
 	match first_word:
 		'a':
-			if autoload.stage == 1:
+			if autoload.stage == 0:
+				autoload.stage = 0.1
+				return '	You eyes drift open, as if rising from a slumber. 
+	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are a pumpkin.
+	
+	A) Look around(NOT WORKING)
+	B) Roll forward aimlessly"'
+				
+			elif autoload.stage == 1:
 				autoload.stage = 2
 				return 'Unexpectedly you roll on over and start using the street instead of the sidewalk
 				As you roll forward you start to look around this spooky night, wondering what to do next?
@@ -29,7 +37,7 @@ func command(input: String) -> String:
 				
 				A) Crash an unwilling particpants random house
 				B) Cushion your body in a Stinky Garbage Dump
-				    (The stench reaches to the heavens)
+				    (The stench pierces the heavens)(WIP)
 				C) Who needs gravity? '
 				
 
@@ -46,7 +54,7 @@ func command(input: String) -> String:
 				YOU:
 				
 				A) Stay still
-				B) Escape 
+				B) Escape (WIP)
 				C) Attack (The Guy)
 			
 					"
@@ -78,11 +86,11 @@ func command(input: String) -> String:
 				autoload.stage = -1
 				return 'The stench of the compost bin is a familar friend to you.
 				You have grown to enjoy the cushion and warmth the rotting food
-				provides as you drift from this existance, withering away.
-				Through it all you absoultly refuse to move, not even a bit.
+				provides as you drift from this existence, withering away.
+				Through it all you absolutely refuse to move, not even a bit.
 				I hope you enjoy this.
 				
-				ENDING 2: Nothingness
+				ENDING 2: Memento Mori
 				
 				A) Restart?'
 			
@@ -99,7 +107,7 @@ func command(input: String) -> String:
 	
 		#ALL B PATH OPTIONS
 		'b':
-			if autoload.stage == 0:
+			if autoload.stage == 0.1:
 				autoload.stage = 1
 				return "You start to move your little body forwards, but realize you have to make an important decision.
 				Do you choose to:
@@ -119,7 +127,7 @@ func command(input: String) -> String:
 				Looking below you ponder your (real) options and choose to:
 				
 				A) Crash an unwilling particpants random house
-				B) Cushion your body in a Stinky Garbage Dump
+				B) Cushion your body in a Stinky Garbage Dump(WIP)
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
 				
@@ -196,17 +204,17 @@ func command(input: String) -> String:
 				autoload.stage = -1
 				return "He's sleeping so soundly, and with a hefty STOMP from you
 				his sleeping becomes eternally undisturbed. You've done it, you've
-				been given the freedom you desired. At a cost
+				been given the freedom you desired. At a cost..
 				
 				ENDING 6 ACHIEVED: SURVI-
 				
 				You know you're a wanted pumpkin now? The police find you quickly,
 				putting you under arrest for illegal activites. Looks like your
 				freedom is gone, once again. The jury is ruthless, the evidence
-				is overwhelming, and you get sentenced to the worse setence:
+				is overwhelming, and you get sentenced to the worse sentence:
 				PUMPKIN PIE
 				
-				ENDING 6 ACHIEVED: JUSTICE
+				ENDING 6 ACHIEVED: Cooked
 				
 				A) Try again?"
 				
