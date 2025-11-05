@@ -15,7 +15,7 @@ func command(input: String) -> String:
 	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are a pumpkin.
 	
 	A) Look around(NOT WORKING)
-	B) Roll forward aimlessly"'
+	B) Roll forward aimlessly'
 				
 			elif autoload.stage == 1:
 				autoload.stage = 2

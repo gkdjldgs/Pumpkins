@@ -14,20 +14,23 @@ const InputResponse = preload('res://dlabels.tscn')
 func _ready() -> void:
 	scrolls.connect('changed', handle_scroll_changed)
 	var starts = Moreresponse.instantiate()
-	starts.text = "           ###########   
-         #### ########   
-        ######### ####   
+	starts.text = "//////////////////////////////////////////////////////////////// 
+           ##    
+        #########
      ####       #####    
   ### ##         ## ###  
  ##  ##           ##  ## 
 ##  ######     ####### ##
-#   ######     #######  #
-#    ##           ##    #
+#   ######     #######  #            PONDERING
+#    ##           ##    #            PUMPKIN
  #  ################## # 
   #  ####       ##### #  
    ###################   
-     ###############     
-	This is a mutiple choice adventure game.. 
+     ###############   
+	//////////////////////////////////////////////////////////////// 
+	 (This is supposed to be a pumpkin btw)
+	
+	This is a mutiple choice adventure game..(Input like a mutiple choice test)
 	follow the prompts to progress the story, and have fun!
 	
 	A) Start?"
