@@ -72,6 +72,7 @@ func command(input: String) -> String:
 				return 'He IS very angry, are you sure? He surveys his room, 
 				the exquisite walls shattered by your pumpkin girth
 				and fails to notice use, as he faints out of shock. 
+				Oh.
 				So now what?
 				
 				A) Stay still
@@ -103,7 +104,7 @@ func command(input: String) -> String:
 				Whaaats s goiing non? Your brain damage has gone past
 				the story, having reprecussions in the game? I didn"t code that.
 				
-				C) ...s'
+				C) ...'
 				
 				
 			elif autoload.stage == 5:
@@ -237,7 +238,19 @@ func command(input: String) -> String:
 				ENDING 7 ACHIEVED: Its just a matter of skill
 				
 				A) Restart? '
+			
+			elif autoload.stage == 4.3:
+				autoload.stage = -1
+				return 'Your head hurts..
+				You see him angrerly walk towards you..
+				He aims a kick towards you, his intent clear as day..
+				You unconsiously roll to the side, he launches a kick
+				He trips, and lies cold on the floor. NICE
+				You roll down the stairs, and go to sleep.
 				
+				ENDING 5 ACHIEVED: Peace and quiet
+				
+				A) Restart? '
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				return "He's sleeping so soundly, and with a hefty STOMP from you
