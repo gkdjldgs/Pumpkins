@@ -131,6 +131,15 @@ func command(input: String) -> String:
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
 				
+			elif autoload.stage == 4:
+				autoload.stage = 4.1
+				return "Hold on.. Let me explain the situation right now.
+				You explode through THE TOP of the house. The ONLY HOPE of
+				escape is past the angry man. What escape is there?
+				I ask again what will you do?
+				
+				A) Atta"
+				
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				return "You quietly roll through the house, 
@@ -212,6 +221,7 @@ func command(input: String) -> String:
 				putting you under arrest for illegal activites. Looks like your
 				freedom is gone, once again. The jury is ruthless, the evidence
 				is overwhelming, and you get sentenced to the worse sentence:
+					
 				PUMPKIN PIE
 				
 				ENDING 6 ACHIEVED: Cooked
