@@ -11,12 +11,20 @@ func command(input: String) -> String:
 		'a':
 			if autoload.stage == 0:
 				autoload.stage = 0.1
-				return '	You eyes drift open, as if rising from a slumber. 
-	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are a pumpkin.
+				return "	You eyes drift open, as if rising from a slumber. 
+	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are, a pumpkin?!?
+	With nothing better to do, and as a pumpkin you can't do anything but:
 	
-	A) Look around(NOT WORKING)
-	B) Roll forward aimlessly'
-				
+	A) Roll forward aimlessly"
+	
+			elif autoload.stage == 0.1:
+				autoload.stage = 1
+				return "You start to move your little body forwards, but realize you have to make an important decision.
+				Do you choose to:
+							
+				A) Use the street
+				B) Roll on the sidewalk(WIP)"
+						
 			elif autoload.stage == 1:
 				autoload.stage = 2
 				return 'Unexpectedly you roll on over and start using the street instead of the sidewalk
@@ -70,6 +78,18 @@ func command(input: String) -> String:
 				B) ESCAPE
 				C) PREEEMPTIVE STRIKE'
 			
+			elif autoload.stage == 4.1:
+				autoload.stage = 4.2
+				return "/SIGH/
+				You sieze the moment and start your escape attempt
+				With a burst of speed you roll under his legs and speed towards the room's exit! His scream of anger reverbarates 
+				through the house, you have to do something!!
+					
+				Looking around the house and at your options you choose to:
+					
+				A) Jump through a window
+				B) Bust through the door
+				C) Fire place"
 			elif autoload.stage == 5:
 				autoload.stage = 6
 				return 'Hours pass, his snoring drones into your nonexistent ears as you stay ever so
@@ -107,18 +127,11 @@ func command(input: String) -> String:
 	
 		#ALL B PATH OPTIONS
 		'b':
-			if autoload.stage == 0.1:
-				autoload.stage = 1
-				return "You start to move your little body forwards, but realize you have to make an important decision.
-				Do you choose to:
-							
-				A) Use the street
-				B) Roll on the sidewalk(WIP)"
 				
 			#elif autoload.stage == 1:
 				#return "You walk on the sidewalk"
 				
-			elif autoload.stage == 2:
+			if autoload.stage == 2:
 				autoload.stage = 3
 				return "Hold on, these options seem to be wrong...
 				Anyways the impact hurls you through the sky like a rocket
@@ -138,7 +151,7 @@ func command(input: String) -> String:
 				escape is past the angry man. What escape is there?
 				I ask again what will you do?
 				
-				A) Atta"
+				A) Escape"
 				
 			elif autoload.stage == 5:
 				autoload.stage = -1
