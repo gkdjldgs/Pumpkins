@@ -62,7 +62,7 @@ func command(input: String) -> String:
 				YOU:
 				
 				A) Stay still
-				B) Escape (WIP)
+				B) Sneak past (WIP)
 				C) Attack (The Guy)
 			
 					"
@@ -90,6 +90,22 @@ func command(input: String) -> String:
 				A) Jump through a window
 				B) Bust through the door
 				C) Fire place"
+			elif autoload.stage == 4.2:
+				autoload.stage = 4.3
+				return 'You bonk your head on the hard glass window
+				"Ouch I think you bruised a little from that"
+				Having broken something you decide to try again:
+				
+				A) Oyu thru eade
+				B) Floro owwie zowwie
+				C) squawkers wo
+				
+				Whaaats s goiing non? Your brain damage has gone past
+				the story, having reprecussions in the game? I didn"t code that.
+				
+				C) ...s'
+				
+				
 			elif autoload.stage == 5:
 				autoload.stage = 6
 				return 'Hours pass, his snoring drones into your nonexistent ears as you stay ever so
