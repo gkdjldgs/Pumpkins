@@ -12,8 +12,6 @@ func command(input: String) -> String:
 			if autoload.stage == 0:
 				autoload.stage = 0.1
 				#A
-
-	
 				return "	You eyes drift open, as if rising from a slumber. 
 	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are, a pumpkin?!?
 	With nothing better to do, and as a pumpkin you can't do anything but:
@@ -83,6 +81,7 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 4.1:
 				autoload.stage = 4.2
+				#AAAA(ABC)BA
 				return "/SIGH/
 				You sieze the moment and start your escape attempt
 				With a burst of speed you roll under his legs and speed towards the room's exit! His scream of anger reverbarates 
@@ -96,6 +95,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.2:
 				autoload.stage = 4.3
+				#AAAA(ABC)BAA
 				return 'You bonk your head on the hard glass window
 				"Ouch I think you bruised a little from that"
 				Having broken something you decide to try again:
@@ -104,8 +104,7 @@ func command(input: String) -> String:
 				B) Floro owwie zowwie
 				C) squawkers wo
 				
-				Whaaats s goiing non? Your brain damage has gone past
-				the story, having reprecussions in the game? I didn"t code that.
+				Whaaats s goiing non? Your brain damage has affected your choices?
 				
 				C) ...'
 				
@@ -179,15 +178,24 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4:
 				autoload.stage = 4.1
+				#AAAA(ABC)B
 				return "Hold on.. Let me explain the situation right now.
 				You explode through THE TOP of the house. The ONLY HOPE of
 				escape is past the angry man. What escape is there?
 				I ask again what will you do?
 				
-				A) Escape"
+				A) Escape
+				B) Give up"
+				
+			elif autoload.stage == 4.1:
+				autoload.stage = 4.11
+				#AAAA(ABC)BB
+				return 'Your fighting spirit drains out of you, and with a
+				CRACKK you are thrown across the house'
 				
 			elif autoload.stage == 5:
 				autoload.stage = -1
+				#AAAA(ABC)AB
 				return "You quietly roll through the house, 
 				and with the power of even more property damage
 				(You jump through his window) you've done it, you've ESCAPED!!
@@ -221,7 +229,7 @@ func command(input: String) -> String:
 		'c':
 			if autoload.stage == 2:
 				autoload.stage = 3
-				#AAAA(ABC)C
+				#AAAA(ABC)
 				return "Hold on, these options seem to be wrong...
 				Anyways the impact hurls you through the sky like a rocket
 				The view is honestly pretty good
@@ -232,9 +240,10 @@ func command(input: String) -> String:
 				B) Cushion your body in a Stinky Garbage Dump
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
+				
 			elif autoload.stage == 3:
 				autoload.stage == -1
-				#AAAA(ABC)CC
+				#AAAA(ABC)C
 				return 'Duh, YOU ARE A PUMPKIN YOU DO NOT FLY
 				Anyways you start flying through the sky
 				
@@ -261,6 +270,7 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
+				#AAAA(ABC)BAAC
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
 				He aims a kick towards you, his intent clear as day..
@@ -273,8 +283,9 @@ func command(input: String) -> String:
 				A) Restart? '
 			elif autoload.stage == 5:
 				autoload.stage = -1
+				#AAAA(ABC)AC
 				return "He's sleeping so soundly, and with a hefty STOMP from you
-				his sleeping becomes eternally undisturbed. You've done it, you've
+				his sleeping becomes permantly undisturbed. You've done it, you've
 				been given the freedom you desired. At a cost..
 				
 				ENDING 6 ACHIEVED: SURVI-
@@ -283,10 +294,8 @@ func command(input: String) -> String:
 				putting you under arrest for illegal activites. Looks like your
 				freedom is gone, once again. The jury is ruthless, the evidence
 				is overwhelming, and you get sentenced to the worse sentence:
-					
-				PUMPKIN PIE
 				
-				ENDING 6 ACHIEVED: Cooked
+				ENDING 6 ACHIEVED: PUMPKIN PIE
 				
 				A) Try again?"
 				
