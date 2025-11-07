@@ -11,22 +11,30 @@ func command(input: String) -> String:
 		'a':
 			if autoload.stage == 0:
 				autoload.stage = 0.1
+				#A
+
+	
 				return "	You eyes drift open, as if rising from a slumber. 
 	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are, a pumpkin?!?
 	With nothing better to do, and as a pumpkin you can't do anything but:
 	
 	A) Roll forward aimlessly"
-	
+
+
 			elif autoload.stage == 0.1:
 				autoload.stage = 1
+				#AA
 				return "You start to move your little body forwards, but realize you have to make an important decision.
 				Do you choose to:
 							
 				A) Use the street
 				B) Roll on the sidewalk(WIP)"
-						
+
+
+
 			elif autoload.stage == 1:
 				autoload.stage = 2
+				#AAA
 				return 'Unexpectedly you roll on over and start using the street instead of the sidewalk
 				As you roll forward you start to look around this spooky night, wondering what to do next?
 					
@@ -34,9 +42,11 @@ func command(input: String) -> String:
 				B) You get hit by a car
 				C) You get sent FLYING '
 				
+
 			
 			elif autoload.stage == 2:
 				autoload.stage = 3
+				#AAAA
 				return 'Hold on, these options seem to be wrong...
 				Anyways the impact hurls you through the sky like a rocket
 				The view is honestly pretty good
@@ -51,6 +61,7 @@ func command(input: String) -> String:
 
 			elif autoload.stage == 3:
 				autoload.stage = 4
+				#AAAA(ABC)
 				return "As gravity takes hold you choose to drift towards a perfectly,
 				fine looking house, that you can't help but notice..
 				ESPECIALLY SINCE YOUR BARRELING INTO IT'S WALLSS.
@@ -67,17 +78,8 @@ func command(input: String) -> String:
 			
 					"
 			
-			elif autoload.stage == 4:
-				autoload.stage = 5
-				return 'He IS very angry, are you sure? He surveys his room, 
-				the exquisite walls shattered by your pumpkin girth
-				and fails to notice use, as he faints out of shock. 
-				Oh.
-				So now what?
-				
-				A) Stay still
-				B) ESCAPE
-				C) PREEEMPTIVE STRIKE'
+
+
 			
 			elif autoload.stage == 4.1:
 				autoload.stage = 4.2
@@ -91,6 +93,7 @@ func command(input: String) -> String:
 				A) Jump through a window
 				B) Bust through the door
 				C) Fire place"
+				
 			elif autoload.stage == 4.2:
 				autoload.stage = 4.3
 				return 'You bonk your head on the hard glass window
@@ -106,9 +109,22 @@ func command(input: String) -> String:
 				
 				C) ...'
 				
+			elif autoload.stage == 4:
+				autoload.stage = 5
+				#AAAA(ABC)A
+				return 'He IS very angry, are you sure? He surveys his room, 
+				the exquisite walls shattered by your pumpkin girth
+				and fails to notice use, as he faints out of shock. 
+				Oh.
+				So now what?
+				
+				A) Stay still
+				B) ESCAPE
+				C) PREEEMPTIVE STRIKE'
 				
 			elif autoload.stage == 5:
 				autoload.stage = 6
+				#AAAA(ABC)AA
 				return 'Hours pass, his snoring drones into your nonexistent ears as you stay ever so
 				carefully still. Your mind stops thinking, you do not even notice when he picks your
 				body up and carries you over to the compost bin.
@@ -119,8 +135,8 @@ func command(input: String) -> String:
 				B) NOT STAY STILL'
 				
 			elif autoload.stage == 6:
-				
 				autoload.stage = -1
+				#AAAA(ABC)AAA
 				return 'The stench of the compost bin is a familar friend to you.
 				You have grown to enjoy the cushion and warmth the rotting food
 				provides as you drift from this existence, withering away.
@@ -145,11 +161,11 @@ func command(input: String) -> String:
 		#ALL B PATH OPTIONS
 		'b':
 				
-			#elif autoload.stage == 1:
-				#return "You walk on the sidewalk"
+
 				
 			if autoload.stage == 2:
 				autoload.stage = 3
+				#AAAA(ABC)
 				return "Hold on, these options seem to be wrong...
 				Anyways the impact hurls you through the sky like a rocket
 				The view is honestly pretty good
@@ -184,6 +200,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 6:
 				autoload.stage = -1
+				#AAAA(ABC)AAB
 				return 'At the last second you muster up the courage to act.
 				Unfortunately for you that mainly comes down to bouncing up and
 				down a lot (but youre really good at it)
@@ -204,6 +221,7 @@ func command(input: String) -> String:
 		'c':
 			if autoload.stage == 2:
 				autoload.stage = 3
+				#AAAA(ABC)C
 				return "Hold on, these options seem to be wrong...
 				Anyways the impact hurls you through the sky like a rocket
 				The view is honestly pretty good
@@ -216,6 +234,7 @@ func command(input: String) -> String:
 				C) Who needs gravity?"
 			elif autoload.stage == 3:
 				autoload.stage == -1
+				#AAAA(ABC)CC
 				return 'Duh, YOU ARE A PUMPKIN YOU DO NOT FLY
 				Anyways you start flying through the sky
 				
@@ -230,6 +249,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4:
 				autoload.stage = -1
+				#AAAA(ABC)C
 				return 'You try and attack him, but just think about this
 				He is literally the angriest person on the planet right now and 
 				you are the perfect outlet for his anger. His attack is a 
@@ -272,8 +292,6 @@ func command(input: String) -> String:
 				
 			else:
 				return "Wrong Command, try again?"
-
-			print(words)
 				
 		'help':
 			return help()
