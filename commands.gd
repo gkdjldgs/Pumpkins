@@ -71,7 +71,7 @@ func command(input: String) -> String:
 				YOU:
 				
 				A) Stay still
-				B) Sneak past (WIP)
+				B) Sneak past
 				C) Attack (The Guy)
 			
 					"
@@ -191,7 +191,25 @@ func command(input: String) -> String:
 				autoload.stage = 4.11
 				#AAAA(ABC)BB
 				return 'Your fighting spirit drains out of you, and with a
-				CRACKK you are thrown across the house'
+				CRACKK you are flung across the house.. You splat on the floor
+				next to an open air vent. You think you can still move.. but should you?
+				
+				A) Smoothly Slime Somewhere
+				B) Chill'
+				
+			
+			elif autoload.stage == 4.11:
+				autoload.stage = -1
+				#AAAA(ABC)BBB
+				return 'You Chill. The guy slowly walks down the stairs approaching you
+				You Fall. You slowly drip into the vent, its very warm
+				You Fly. The winds of the vent carry you through the system
+				You Rest. The vent spits you out on the floor as dust
+				
+				ENDING 8 ACHIEVED: Nothing but ashes
+				
+				A) Restart?'
+				
 				
 			elif autoload.stage == 5:
 				autoload.stage = -1
