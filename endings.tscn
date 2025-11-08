@@ -1,3 +1,48 @@
-[gd_scene format=3 uid="uid://l8xbidtoiftb"]
+[gd_scene load_steps=2 format=3 uid="uid://l8xbidtoiftb"]
+
+[ext_resource type="Texture2D" uid="uid://dwephugkehyqy" path="res://addons/graphsave.png" id="1_u62x2"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 324)
+texture = ExtResource("1_u62x2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 3
+offset_left = 117.0
+offset_top = 49.0
+offset_right = 234.0
+offset_bottom = 69.0
+theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
+theme_override_font_sizes/normal_font_size = 16
+text = "CHOOSE A"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 116.0
+offset_top = 70.0
+offset_right = 233.0
+offset_bottom = 90.0
+theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
+text = "CHOOSE B"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 117.0
+offset_top = 93.0
+offset_right = 234.0
+offset_bottom = 113.0
+theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
+text = "CHOOSE C"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 117.0
+offset_top = 117.0
+offset_right = 234.0
+offset_bottom = 137.0
+theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
+theme_override_font_sizes/normal_font_size = 13
+text = "ANY OPTION"
