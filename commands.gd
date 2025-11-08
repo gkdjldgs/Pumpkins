@@ -14,7 +14,7 @@ func command(input: String) -> String:
 				#A
 				return "	You eyes drift open, as if rising from a slumber. 
 	The sounds of Halloween fill your ears as you come to the realization that compared to everyone else, you are, a pumpkin?!?
-	With nothing better to do, and as a pumpkin you can't do anything but:
+	With nothing better to do you:
 	
 	A) Roll forward aimlessly"
 
@@ -22,7 +22,8 @@ func command(input: String) -> String:
 			elif autoload.stage == 0.1:
 				autoload.stage = 1
 				#AA
-				return "You start to move your little body forwards, but realize you have to make an important decision.
+				return "You start to move your little body forwards, 
+				but realize you have to make an important decision.
 				Do you choose to:
 							
 				A) Use the street
@@ -33,8 +34,10 @@ func command(input: String) -> String:
 			elif autoload.stage == 1:
 				autoload.stage = 2
 				#AAA
-				return 'Unexpectedly you roll on over and start using the street instead of the sidewalk
-				As you roll forward you start to look around this spooky night, wondering what to do next?
+				return 'Unexpectedly you roll on over and start 
+				using the street instead of the sidewalk
+				As you roll forward you start to look around 
+				this spooky night, wondering what to do next?
 					
 				A) You are on the street
 				B) You get hit by a car
@@ -62,11 +65,9 @@ func command(input: String) -> String:
 				#AAAA(ABC)
 				return "As gravity takes hold you choose to drift towards a perfectly,
 				fine looking house, that you can't help but notice..
-				ESPECIALLY SINCE YOUR BARRELING INTO IT'S WALLSS.
 				WOOD SPLINTERS AND AMAZINGLY YOU BOUNCE OFF A COUCH AND LAND ON THE FLOOR, UNHARMED.
 				You feel a bit shaken, and your leaves sink a bit in relief as you take a moment to relax
-				cut short by the abrupt opening of the bedroom door, 
-				Followed by the entrance of the angriest man you have seen
+				Followed by the entrance of the angriest man you have seen through the door.
 				(CAUSE HIS HOUSE IS BROKEN)
 				YOU:
 				
@@ -130,7 +131,9 @@ func command(input: String) -> String:
 				
 				ENDING 5 ACHIEVED: Peace and quiet
 				
-				A) Restart? '
+				A) Restart? 
+				B) View endings'
+				
 				
 			elif autoload.stage == 5:
 				autoload.stage = 6
@@ -155,8 +158,9 @@ func command(input: String) -> String:
 				
 				ENDING 2: Memento Mori
 				
-				A) Restart?'
-			
+				A) Restart?
+				B View endings'
+				
 			elif autoload.stage  == -1:
 				autoload.stage = 0
 				get_tree().reload_current_scene()
@@ -171,7 +175,7 @@ func command(input: String) -> String:
 		#ALL B PATH OPTIONS
 		'b':
 				
-
+	
 				
 			if autoload.stage == 2:
 				autoload.stage = 3
@@ -205,7 +209,7 @@ func command(input: String) -> String:
 				CRACKK you are flung across the house.. You splat on the floor
 				next to an open air vent. You think you can still move.. but should you?
 				
-				A) Smoothly Slime Somewhere
+				A) Smoothly Snake Somewhere(WIP)
 				B) Chill'
 				
 			
@@ -219,7 +223,8 @@ func command(input: String) -> String:
 				
 				ENDING 8 ACHIEVED: Nothing but ashes
 				
-				A) Restart?'
+				A) Restart?
+				B) View endings'
 			
 			elif autoload.stage == 4.2:
 				autoload.stage = -1
@@ -231,7 +236,8 @@ func command(input: String) -> String:
 				
 				ENDING 9 ACHIEVED: Dramatic Finish
 				
-				A) Restart?a'
+				A) Restart?
+				B) View endings'
 				
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
@@ -245,7 +251,8 @@ func command(input: String) -> String:
 				
 				ENDING 5 ACHIEVED: Peace and quiet
 				
-				A) Restart? '
+				A) Restart?
+				B) View endings '
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				#AAAA(ABC)AB
@@ -257,7 +264,8 @@ func command(input: String) -> String:
 				
 				ENDING 4 ACHIEVED: Sneak 100
 				
-				A) Restart? "
+				A) Restart?
+				B) View endings "
 				
 			elif autoload.stage == 6:
 				autoload.stage = -1
@@ -270,7 +278,14 @@ func command(input: String) -> String:
 				
 				ENDING 3 ACHIEVED: Too little, Too late
 				
-				A) Restart?'
+				A) Restart?
+				B) View endings
+				'
+			
+				
+			elif autoload.stage== -1:
+				get_tree().change_scene_to_file("res://endings.tscn")
+				return ''
 				
 				
 			else:
@@ -307,7 +322,8 @@ func command(input: String) -> String:
 				
 				ENDING 1 ACHIEVED: "Eventually, Kars stopped thinking..."
 				
-				A) Restart? '
+				A) Restart? 
+				B) View endings'
 				
 			elif autoload.stage == 4:
 				autoload.stage = -1
@@ -319,8 +335,9 @@ func command(input: String) -> String:
 				
 				ENDING 7 ACHIEVED: Its just a matter of skill
 				
-				A) Restart? '
-			
+				A) Restart?
+				B) View endings '
+
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
 				#AAAA(ABC)BAA(ABC)
@@ -333,7 +350,8 @@ func command(input: String) -> String:
 				
 				ENDING 5 ACHIEVED: Peace and quiet
 				
-				A) Restart? '
+				A) Restart?
+				B) View endings '
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				#AAAA(ABC)AC
@@ -350,8 +368,8 @@ func command(input: String) -> String:
 				
 				ENDING 6 ACHIEVED: PUMPKIN PIE
 				
-				A) Try again?"
-				
+				A) Try again?
+				B) View endings"
 			else:
 				return "Wrong Command, try again?"
 				
