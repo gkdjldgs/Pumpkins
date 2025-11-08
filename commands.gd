@@ -73,13 +73,9 @@ func command(input: String) -> String:
 				
 				A) Stay still
 				B) Sneak past
-				C) Attack (The Guy)
-			
-					"
+				C) Attack"
 			
 
-
-			
 			elif autoload.stage == 4.1:
 				autoload.stage = 4.2
 				#AAAA(ABC)BA
@@ -129,7 +125,7 @@ func command(input: String) -> String:
 				He trips, and lies cold on the floor. NICE
 				You roll down the stairs, and go to sleep.
 				
-				ENDING 5 ACHIEVED: Peace and quiet
+				ENDING ACHIEVED: Peace and Quiet
 				
 				A) Restart? 
 				B) View endings'
@@ -156,10 +152,10 @@ func command(input: String) -> String:
 				Through it all you absolutely refuse to move, not even a bit.
 				I hope you enjoy this.
 				
-				ENDING 2: Memento Mori
+				YOU DIED
 				
 				A) Restart?
-				B View endings'
+				B) View endings'
 				
 			elif autoload.stage  == -1:
 				autoload.stage = 0
@@ -175,7 +171,6 @@ func command(input: String) -> String:
 		#ALL B PATH OPTIONS
 		'b':
 				
-	
 				
 			if autoload.stage == 2:
 				autoload.stage = 3
@@ -190,10 +185,14 @@ func command(input: String) -> String:
 				B) Cushion your body in a Stinky Garbage Dump(WIP)
 				    (The stench reaches to the heavens)
 				C) Who needs gravity?"
-				
+			
+			elif autoload.stage == 3:
+				autoload.stage = 3.5
+				#AAAA(ABC)B
+				return 'The '
 			elif autoload.stage == 4:
 				autoload.stage = 4.1
-				#AAAA(ABC)B
+				#AAAA(ABC)AB
 				return "Hold on.. Let me explain the situation right now.
 				You explode through THE TOP of the house. The ONLY HOPE of
 				escape is past the angry man. What escape is there?
@@ -212,16 +211,16 @@ func command(input: String) -> String:
 				A) Smoothly Snake Somewhere(WIP)
 				B) Chill'
 				
-			
+				
 			elif autoload.stage == 4.11:
 				autoload.stage = -1
 				#AAAA(ABC)BBB
 				return 'You Chill. The guy slowly walks down the stairs approaching you
 				You Fall. You slowly drip into the vent, its very warm
 				You Fly. The winds of the vent carry you through the system
-				You Rest. The vent spits you out on the floor as dust
+				You Rest. The vent spits you out in the air
 				
-				ENDING 8 ACHIEVED: Nothing but ashes
+				YOU DIED
 				
 				A) Restart?
 				B) View endings'
@@ -234,7 +233,7 @@ func command(input: String) -> String:
 				Less like a pumpkin and more like a hedgehog you blast through and up the fireplace
 				And rise sailing into the sunset.
 				
-				ENDING 9 ACHIEVED: Dramatic Finish
+				ENDING ACHIEVED: Dramatic Finish
 				
 				A) Restart?
 				B) View endings'
@@ -249,7 +248,7 @@ func command(input: String) -> String:
 				He trips, and lies cold on the floor. NICE
 				You roll down the stairs, and go to sleep.
 				
-				ENDING 5 ACHIEVED: Peace and quiet
+				ENDING ACHIEVED: Peace and quiet
 				
 				A) Restart?
 				B) View endings '
@@ -262,7 +261,7 @@ func command(input: String) -> String:
 				You absorb the cool air of the night in your gourdy body,
 				and escape to your freedom.
 				
-				ENDING 4 ACHIEVED: Sneak 100
+				ENDING ACHIEVED: Sneak 100
 				
 				A) Restart?
 				B) View endings "
@@ -273,17 +272,17 @@ func command(input: String) -> String:
 				return 'At the last second you muster up the courage to act.
 				Unfortunately for you that mainly comes down to bouncing up and
 				down a lot (but youre really good at it)
-				Unable to open doors due to your lack of hands, you fade away
-				You take your actions too late, and paid the price.
+				Unable to open the door, you decompost into mush
 				
-				ENDING 3 ACHIEVED: Too little, Too late
+				
+				You Died
 				
 				A) Restart?
 				B) View endings
 				'
 			
 				
-			elif autoload.stage== -1:
+			elif autoload.stage == -1 or autoload.stage == 0:
 				get_tree().change_scene_to_file("res://endings.tscn")
 				return ''
 				
@@ -320,7 +319,7 @@ func command(input: String) -> String:
 				The last words you would say would be "AHHHHH I am so COLD!!!",
 				Thankfully you are a pumpkin, no pain.
 				
-				ENDING 1 ACHIEVED: "Eventually, Kars stopped thinking..."
+				YOU DIED
 				
 				A) Restart? 
 				B) View endings'
@@ -333,7 +332,7 @@ func command(input: String) -> String:
 				you are the perfect outlet for his anger. His attack is a 
 				CRITICAL HIT, and you lie scattered among the walls
 				
-				ENDING 7 ACHIEVED: Its just a matter of skill
+				YOU DIED
 				
 				A) Restart?
 				B) View endings '
@@ -366,7 +365,7 @@ func command(input: String) -> String:
 				freedom is gone, once again. The jury is ruthless, the evidence
 				is overwhelming, and you get sentenced to the worse sentence:
 				
-				ENDING 6 ACHIEVED: PUMPKIN PIE
+				PUMPKIN PIE(YOU DIED)
 				
 				A) Try again?
 				B) View endings"

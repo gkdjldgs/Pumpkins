@@ -15,12 +15,7 @@ func _ready() -> void:
 	scrolls.connect('changed', handle_scroll_changed)
 	var starts = Moreresponse.instantiate()
 	starts.text = "//////////////////////////////////////////////////////////////// 
-           ##    
-        #########
-     ####       #####    
-  ### ##         ## ###  
- ##  ##           ##  ## 
-##  ######     ####### ##
+ ##  ######     ####### ##
 #   ######     #######  #            PONDERING
 #    ##           ##    #            PUMPKIN
  #  ################## # 
@@ -33,7 +28,8 @@ func _ready() -> void:
 	This is a mutiple choice adventure game..(Input like a mutiple choice test)
 	follow the prompts to progress the story, and have fun!
 	
-	A) Start?"
+	A) Start?
+	B) View endings"
 	
 	
 	add_response(starts)
