@@ -15,8 +15,8 @@ how to make a text based adventure game on godot were really helpful, so
 
 THE THEME
 
-This weeks theme was spooky, and I followed this by overall having a pumpkin as the main character and the setting taking place during halloween.
-Also some of the ending are very spooky, a bit of a horror to them(no jumpscares though)
+This weeks theme is grid, to comply with the theme, I added a seperate scene for the player to view the endings they've experienced. This is displayed in a graph that 
+shows the choices the player made to make to reach an ending. Cause graphs are in a grid.
 
 MAKING OF THE GAME
 
