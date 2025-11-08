@@ -90,8 +90,7 @@ func command(input: String) -> String:
 				Looking around the house and at your options you choose to:
 					
 				A) Jump through a window
-				B) Bust through the door
-				C) Fire place"
+				B) Fire place"
 				
 			elif autoload.stage == 4.2:
 				autoload.stage = 4.3
@@ -104,9 +103,7 @@ func command(input: String) -> String:
 				B) Floro owwie zowwie
 				C) squawkers wo
 				
-				Whaaats s goiing non? Your brain damage has affected your choices?
-				
-				C) ...'
+				Whaaats s goiing non? Your brain damage has affected your choices?'
 				
 			elif autoload.stage == 4:
 				autoload.stage = 5
@@ -120,6 +117,20 @@ func command(input: String) -> String:
 				A) Stay still
 				B) ESCAPE
 				C) PREEEMPTIVE STRIKE'
+				
+			elif autoload.stage == 4.3:
+				autoload.stage = -1
+				#AAAA(ABC)BAA(ABC)
+				return 'Your head hurts..
+				You see him angrerly walk towards you..
+				He aims a kick towards you, his intent clear as day..
+				You unconsiously roll to the side, he launches a kick
+				He trips, and lies cold on the floor. NICE
+				You roll down the stairs, and go to sleep.
+				
+				ENDING 5 ACHIEVED: Peace and quiet
+				
+				A) Restart? '
 				
 			elif autoload.stage == 5:
 				autoload.stage = 6
@@ -209,8 +220,32 @@ func command(input: String) -> String:
 				ENDING 8 ACHIEVED: Nothing but ashes
 				
 				A) Restart?'
+			
+			elif autoload.stage == 4.2:
+				autoload.stage = -1
+				#AAAA(ABC)BA
+				return'You start rolling up in a ball, building up kinetic energy
+				He lunges at you, trying visicously to stop you
+				Less like a pumpkin and more like a hedgehog you blast through and up the fireplace
+				And rise sailing into the sunset.
 				
+				ENDING 9 ACHIEVED: Dramatic Finish
 				
+				A) Restart?a'
+				
+			elif autoload.stage == 4.3:
+				autoload.stage = -1
+				#AAAA(ABC)BAA(ABC)
+				return 'Your head hurts..
+				You see him angrerly walk towards you..
+				He aims a kick towards you, his intent clear as day..
+				You unconsiously roll to the side, he launches a kick
+				He trips, and lies cold on the floor. NICE
+				You roll down the stairs, and go to sleep.
+				
+				ENDING 5 ACHIEVED: Peace and quiet
+				
+				A) Restart? '
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				#AAAA(ABC)AB
@@ -288,7 +323,7 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
-				#AAAA(ABC)BAAC
+				#AAAA(ABC)BAA(ABC)
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
 				He aims a kick towards you, his intent clear as day..
