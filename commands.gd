@@ -126,12 +126,11 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.11:
 					autoload.stage = -1
-					#AAAA(ABC)BBB
-					return 'You Chill. The guy slowly walks down the stairs approaching you
-					You Fall. You slowly drip into the vent, its very warm
-					You Fly. The winds of the vent carry you through the system
-					You Rest. The vent spits you out in the air.
-					
+					#AAAA(ABC)BBBA
+					return 'You gather your self off the floor and move towards the door.
+					The situation would look really hopeful, if it wasnt for 
+					the guy behind you that stomps on you.
+					  
 					YOU DIED
 					
 					A) Restart?
@@ -218,9 +217,9 @@ func command(input: String) -> String:
 	
 				Given your options you have a few options you could:
 				
-				A) Slide down
-				B) Leap of faith
-				C) Look around '
+				A) Slide down (boring)
+				B) Leap of faith (cool)
+				'
 				
 			elif autoload.stage == 3.5:
 				autoload.stage = -1
@@ -299,6 +298,7 @@ func command(input: String) -> String:
 				
 				A) Restart?
 				B) View endings '
+				
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				#AAAA(ABC)AB
@@ -396,10 +396,11 @@ func command(input: String) -> String:
 				He trips, and lies cold on the floor. NICE
 				You roll down the stairs, and go to sleep.
 				
-				ENDING 5 ACHIEVED: Peace and quiet
+				ENDING ACHIEVED: Peace and quiet
 				
 				A) Restart?
 				B) View endings '
+				
 			elif autoload.stage == 5:
 				autoload.stage = -1
 				#AAAA(ABC)AC
@@ -407,7 +408,7 @@ func command(input: String) -> String:
 				his sleeping becomes permantly undisturbed. You've done it, you've
 				been given the freedom you desired. At a cost..
 				
-				ENDING 6 ACHIEVED: SURVI-
+				ENDING ACHIEVED: SURVI-
 				
 				You know you're a wanted pumpkin now? The police find you quickly,
 				putting you under arrest for illegal activites. Looks like your
