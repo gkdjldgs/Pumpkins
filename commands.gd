@@ -340,8 +340,8 @@ func command(input: String) -> String:
 				
 				return 'you roll on over and start 
 				using the street to wander around
-				As you roll forward you start to look around 
-				this spooky night, wondering what to do next?
+				Wait, you can hear something
+				coming from behind..
 					
 				A) You are on the street
 				B) You get hit by a car
