@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://l8xbidtoiftb"]
+[gd_scene load_steps=5 format=3 uid="uid://l8xbidtoiftb"]
 
 [ext_resource type="Texture2D" uid="uid://dwephugkehyqy" path="res://addons/graphsave.png" id="1_u62x2"]
 [ext_resource type="Script" uid="uid://bj30lv6bs7qq" path="res://button.gd" id="2_8clhe"]
 [ext_resource type="Texture2D" uid="uid://2yf4m7dfojeu" path="res://expy/nothing special graph.png" id="3_1uqj3"]
+[ext_resource type="Texture2D" uid="uid://dht1s1wksw42u" path="res://expy/peace and quiet graph.png" id="4_7ilvu"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -169,12 +170,27 @@ texture = ExtResource("3_1uqj3")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="NothingSpecialGraph"]
 texture_filter = 1
-offset_left = -53.492565
-offset_top = 98.969055
-offset_right = 48.71639
-offset_bottom = 128.46213
-theme_override_font_sizes/normal_font_size = 10
-text = "	ENDING 1
-NOTHING SPECIAL"
+offset_left = -72.59704
+offset_top = -141.52577
+offset_right = 107.940285
+offset_bottom = -102.92784
+theme_override_font_sizes/normal_font_size = 14
+text = "	ENDING 1:
+ NOTHING SPECIAL"
+
+[node name="Peaceandquietgraph" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(862, 377)
+scale = Vector2(1.03125, 1.0078125)
+texture = ExtResource("4_7ilvu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Peaceandquietgraph"]
+offset_left = -73.696976
+offset_top = -165.70543
+offset_right = 81.454575
+offset_bottom = -125.70543
+theme_override_font_sizes/normal_font_size = 14
+text = "	ENDING 5:
+ PEACE AND QUIET"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

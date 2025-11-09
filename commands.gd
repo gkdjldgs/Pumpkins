@@ -189,10 +189,10 @@ func command(input: String) -> String:
 				but you realize, GRAVITY oh NOO :(
 				Looking below you ponder your (real) options and choose to:
 				
-				A) Crash an unwilling particpants random house
+				A) Who needs gravity?
 				B) Cushion your body in a Stinky Garbage Dump(WIP)
 					(The stench reaches to the heavens)
-				C) Who needs gravity?"
+				C) Crash an unwilling particpants random house"
 			
 			elif autoload.stage == 3:
 				autoload.stage = 3.5
@@ -356,10 +356,10 @@ func command(input: String) -> String:
 				but you realize, GRAVITY oh NOO :(
 				Looking below you ponder your (real) options and choose to:
 				
-				A) Crash an unwilling particpants random house
+				A) Who needs gravity?
 				B) Cushion your body in a Stinky Garbage Dump
 				    (The stench reaches to the heavens)
-				C) Who needs gravity?"
+				C) Crash an unwilling particpants random house"
 				
 			elif autoload.stage == 3:
 				autoload.stage = 4
