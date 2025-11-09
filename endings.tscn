@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://l8xbidtoiftb"]
+[gd_scene load_steps=6 format=3 uid="uid://l8xbidtoiftb"]
 
 [ext_resource type="Texture2D" uid="uid://dwephugkehyqy" path="res://addons/graphsave.png" id="1_u62x2"]
 [ext_resource type="Script" uid="uid://bj30lv6bs7qq" path="res://button.gd" id="2_8clhe"]
 [ext_resource type="Texture2D" uid="uid://2yf4m7dfojeu" path="res://expy/nothing special graph.png" id="3_1uqj3"]
 [ext_resource type="Texture2D" uid="uid://dht1s1wksw42u" path="res://expy/peace and quiet graph.png" id="4_7ilvu"]
+[ext_resource type="Script" uid="uid://djdlfv3bds8fg" path="res://rich_text_label.gd" id="5_5hnc2"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -93,9 +94,9 @@ text = "LEGEND"
 [node name="DESCRIPTION" type="RichTextLabel" parent="Sprite2D"]
 offset_left = -213.0
 offset_top = 260.0
-offset_right = 314.0
+offset_right = 131.0
 offset_bottom = 360.0
-theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/normal_font_size = 11
 text = "THIS SHOWS THE ENDINGS UNLOCKED BY THE PLAYER, THE Y AXIS SHOWS THE CHOICES MADE TO REACH AN ENDING WHILE THE X SHOWS THE ENDINGS"
 
 [node name="RichTextLabel10" type="RichTextLabel" parent="Sprite2D"]
@@ -106,10 +107,10 @@ offset_right = -537.0
 offset_bottom = -284.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Sprite2D"]
-offset_left = -88.0
-offset_top = 219.0
-offset_right = 286.0
-offset_bottom = 259.0
+offset_left = -167.0
+offset_top = 217.0
+offset_right = 207.0
+offset_bottom = 257.0
 theme_override_font_sizes/normal_font_size = 32
 text = "ENDING CHART
 "
@@ -192,5 +193,15 @@ offset_bottom = -125.70543
 theme_override_font_sizes/normal_font_size = 14
 text = "	ENDING 5:
  PEACE AND QUIET"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 721.0
+offset_top = 565.0
+offset_right = 954.0
+offset_bottom = 649.0
+theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
+theme_override_font_sizes/normal_font_size = 35
+script = ExtResource("5_5hnc2")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
