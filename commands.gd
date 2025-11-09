@@ -23,19 +23,15 @@ func command(input: String) -> String:
 				autoload.stage = 1
 				#AA
 				return "You start to move your little body forwards, 
-				but realize you have to make an important decision.
-				Do you choose to:
+				but realize you have to find somewhere to go, so you:
 							
-				A) Use the street
-				B) Roll on the sidewalk(WIP)"
-
-
+				A) Use the street"
 
 			elif autoload.stage == 1:
 				autoload.stage = 2
 				#AAA
 				return 'Unexpectedly you roll on over and start 
-				using the street instead of the sidewalk
+				using the street to wander around
 				As you roll forward you start to look around 
 				this spooky night, wondering what to do next?
 					
@@ -56,7 +52,7 @@ func command(input: String) -> String:
 				
 				A) Crash an unwilling particpants random house
 				B) Cushion your body in a Stinky Garbage Dump
-				    (The stench pierces the heavens)(WIP)
+				    (The stench pierces the heavens)
 				C) Who needs gravity? '
 				
 
@@ -75,6 +71,19 @@ func command(input: String) -> String:
 				B) Sneak past
 				C) Attack"
 			
+			elif autoload.stage == 3.5:
+				autoload.stage = -1
+				#AAAA(ABC)BB
+				return 'You look at the edge of the cliff, its only 40 meters down, not that big of a deal.. 
+				You decide to go the long and boring way down. Which takes mutiple hours of cautiously
+				sliding down plastic slushies and toilet paper piles, but at last you make it to the exit.
+				"Well that was boring" you say, and go and leave to live a n average pumpkin life
+				
+				ENDING ACHIEVED: Nothing special
+				
+				A) Restart?
+				B) View endings
+				'
 
 			elif autoload.stage == 4.1:
 				autoload.stage = 4.2
@@ -115,6 +124,19 @@ func command(input: String) -> String:
 				B) ESCAPE
 				C) PREEEMPTIVE STRIKE'
 				
+			elif autoload.stage == 4.11:
+					autoload.stage = -1
+					#AAAA(ABC)BBB
+					return 'You Chill. The guy slowly walks down the stairs approaching you
+					You Fall. You slowly drip into the vent, its very warm
+					You Fly. The winds of the vent carry you through the system
+					You Rest. The vent spits you out in the air.
+					
+					YOU DIED
+					
+					A) Restart?
+					B) View endings'
+	
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
 				#AAAA(ABC)BAA(ABC)
@@ -183,13 +205,38 @@ func command(input: String) -> String:
 				
 				A) Crash an unwilling particpants random house
 				B) Cushion your body in a Stinky Garbage Dump(WIP)
-				    (The stench reaches to the heavens)
+					(The stench reaches to the heavens)
 				C) Who needs gravity?"
 			
 			elif autoload.stage == 3:
 				autoload.stage = 3.5
 				#AAAA(ABC)B
-				return 'The '
+				return 'The ground burst into a stinky explosion, 
+				garbage flies everywhere as you swallow a good bag or 2 of trash.  
+				You burst out of the ground perched on a garbage mountain.
+				Your surroundings are full of old furniture and rotting bags.
+	
+				Given your options you have a few options you could:
+				
+				A) Slide down
+				B) Leap of faith
+				C) Look around '
+				
+			elif autoload.stage == 3.5:
+				autoload.stage = -1
+				#AAAA(ABC)BB
+				return "You look at the edge of the cliff, its only 40 meters down, not that big of a deal.. 
+				You roll back a bit and jump off the edge soaring into the air
+				You fly through the air the second time today and land on a smaller hunk of garbage, close to the ground
+				You mostly feel okay, except on landing you might've been stabbed by a needle on your way down, no big deal
+				Having landed on the ground, you escape the garbage dump and move on with your life.
+				You would have been able to enjoy to it, unfortunatley the needle meens
+				
+				You have died of dysentery
+				
+				A) Restart?
+				B) View endings
+				"
 			elif autoload.stage == 4:
 				autoload.stage = 4.1
 				#AAAA(ABC)AB
@@ -208,8 +255,8 @@ func command(input: String) -> String:
 				CRACKK you are flung across the house.. You splat on the floor
 				next to an open air vent. You think you can still move.. but should you?
 				
-				A) Smoothly Snake Somewhere(WIP)
-				B) Chill'
+				A) Yes
+				B) NO'
 				
 				
 			elif autoload.stage == 4.11:
@@ -218,7 +265,7 @@ func command(input: String) -> String:
 				return 'You Chill. The guy slowly walks down the stairs approaching you
 				You Fall. You slowly drip into the vent, its very warm
 				You Fly. The winds of the vent carry you through the system
-				You Rest. The vent spits you out in the air
+				You Rest. The vent spits you out in the air.
 				
 				YOU DIED
 				
@@ -272,10 +319,12 @@ func command(input: String) -> String:
 				return 'At the last second you muster up the courage to act.
 				Unfortunately for you that mainly comes down to bouncing up and
 				down a lot (but youre really good at it)
-				Unable to open the door, you decompost into mush
+				Unable to open the door, ITS NOT OVER YET as 
+				you bounce up and down over and over waiting..
+				Finally.. The sounds of the garbage truck free 
+				you from the bin freeing you from your prison
 				
-				
-				You Died
+				ENDING ACHIEVED: Sturdy
 				
 				A) Restart?
 				B) View endings
