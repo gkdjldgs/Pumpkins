@@ -126,6 +126,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.11:
 					autoload.stage = -1
+					autoload.deaths += 1
 					#AAAA(ABC)BBBA
 					return 'You gather your self off the floor and move towards the door.
 					The situation would look really hopeful, if it wasnt for 
@@ -166,6 +167,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 6:
 				autoload.stage = -1
+				autoload.deaths += 1
 				#AAAA(ABC)AAA
 				return 'The stench of the compost bin is a familar friend to you.
 				You have grown to enjoy the cushion and warmth the rotting food
@@ -223,6 +225,8 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 3.5:
 				autoload.stage = -1
+				autoload.deaths += 1
+				
 				#AAAA(ABC)BB
 				return "You look at the edge of the cliff, its only 40 meters down, not that big of a deal.. 
 				You roll back a bit and jump off the edge soaring into the air
@@ -260,6 +264,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.11:
 				autoload.stage = -1
+				autoload.deaths += 1
 				#AAAA(ABC)BBB
 				return 'You Chill. The guy slowly walks down the stairs approaching you
 				You Fall. You slowly drip into the vent, its very warm
@@ -286,6 +291,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
+				autoload.deaths += 1
 				#AAAA(ABC)BAA(ABC)
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
@@ -359,6 +365,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 3:
 				autoload.stage == -1
+				autoload.deaths += 1
 				#AAAA(ABC)C
 				return 'Duh, YOU ARE A PUMPKIN YOU DO NOT FLY
 				Anyways you start flying through the sky
@@ -375,6 +382,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4:
 				autoload.stage = -1
+				autoload.deaths += 1
 				#AAAA(ABC)C
 				return 'You try and attack him, but just think about this
 				He is literally the angriest person on the planet right now and 
@@ -403,6 +411,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 5:
 				autoload.stage = -1
+				autoload.deaths += 1
 				#AAAA(ABC)AC
 				return "He's sleeping so soundly, and with a hefty STOMP from you
 				his sleeping becomes permantly undisturbed. You've done it, you've
