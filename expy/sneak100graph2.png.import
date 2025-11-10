@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2yf4m7dfojeu"
-path="res://.godot/imported/nothing special graph.png-79c0e84f7a8ed0e6c9cb77a8a303dcac.ctex"
+uid="uid://dvurnx07gsxlq"
+path="res://.godot/imported/sneak100graph2.png-a0a1a7e02b7e315da1f0a49e1aa261b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://expy/nothing special graph.png"
-dest_files=["res://.godot/imported/nothing special graph.png-79c0e84f7a8ed0e6c9cb77a8a303dcac.ctex"]
+source_file="res://expy/sneak100graph2.png"
+dest_files=["res://.godot/imported/sneak100graph2.png-a0a1a7e02b7e315da1f0a49e1aa261b4.ctex"]
 
 [params]
 

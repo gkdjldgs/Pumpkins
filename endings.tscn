@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://l8xbidtoiftb"]
+[gd_scene load_steps=14 format=3 uid="uid://l8xbidtoiftb"]
 
 [ext_resource type="Texture2D" uid="uid://dwephugkehyqy" path="res://addons/graphsave.png" id="1_u62x2"]
 [ext_resource type="Script" uid="uid://bj30lv6bs7qq" path="res://button.gd" id="2_8clhe"]
-[ext_resource type="Texture2D" uid="uid://2yf4m7dfojeu" path="res://expy/nothing special graph.png" id="3_1uqj3"]
-[ext_resource type="Texture2D" uid="uid://dht1s1wksw42u" path="res://expy/peace and quiet graph.png" id="4_7ilvu"]
+[ext_resource type="Texture2D" uid="uid://d3rjlctmvkxnw" path="res://expy/nothingspecial1graph.png" id="3_5hnc2"]
+[ext_resource type="Script" uid="uid://b5j8hxh0rgk8i" path="res://nothing_special_graph_1.gd" id="4_00nh0"]
+[ext_resource type="Texture2D" uid="uid://bw614rrxca8pf" path="res://expy/peace@quiet5graph.png" id="4_ubvbi"]
 [ext_resource type="Script" uid="uid://djdlfv3bds8fg" path="res://rich_text_label.gd" id="5_5hnc2"]
+[ext_resource type="Texture2D" uid="uid://dvurnx07gsxlq" path="res://expy/sneak100graph2.png" id="5_ubvbi"]
+[ext_resource type="Script" uid="uid://cwsxtblmftmuv" path="res://peaceandquietgraph_5.gd" id="6_ypho5"]
+[ext_resource type="Texture2D" uid="uid://dgg0brp2qg1s0" path="res://expy/dramaticfinish3graph.png" id="7_ilihb"]
+[ext_resource type="Texture2D" uid="uid://uvpri8ck4s54" path="res://expy/sturdy4graph.png" id="8_aeaj8"]
+[ext_resource type="Script" uid="uid://bne0hqyrmwnst" path="res://sneak_100_graph_2.gd" id="9_hr82h"]
+[ext_resource type="Script" uid="uid://l037n48cgo20" path="res://dramaticfinishgraph_3.gd" id="11_mxkwu"]
+[ext_resource type="Script" uid="uid://bkbc6bb1duwst" path="res://sturd_ygraph_4.gd" id="13_gk6lt"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -163,38 +171,40 @@ theme_override_font_sizes/font_size = 50
 text = "RETURN"
 script = ExtResource("2_8clhe")
 
-[node name="NothingSpecialGraph" type="Sprite2D" parent="."]
+[node name="NothingSpecialGraph1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(334.00003, 409)
-scale = Vector2(1.046875, 1.0104169)
-texture = ExtResource("3_1uqj3")
+position = Vector2(334.00003, 409.01044)
+scale = Vector2(1.046875, 0.9899023)
+texture = ExtResource("3_5hnc2")
+script = ExtResource("4_00nh0")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="NothingSpecialGraph"]
+[node name="RichTextLabel" type="RichTextLabel" parent="NothingSpecialGraph1"]
 texture_filter = 1
-offset_left = -72.59704
-offset_top = -141.52577
-offset_right = 107.940285
-offset_bottom = -102.92784
+offset_left = -73.55226
+offset_top = -138.40805
+offset_right = 106.98506
+offset_bottom = -99.81012
 theme_override_font_sizes/normal_font_size = 14
 text = "	ENDING 1:
  NOTHING SPECIAL"
 
-[node name="Peaceandquietgraph" type="Sprite2D" parent="."]
+[node name="Peaceandquietgraph5" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(862, 377)
 scale = Vector2(1.03125, 1.0078125)
-texture = ExtResource("4_7ilvu")
+texture = ExtResource("4_ubvbi")
+script = ExtResource("6_ypho5")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Peaceandquietgraph"]
-offset_left = -73.696976
-offset_top = -165.70543
-offset_right = 81.454575
-offset_bottom = -125.70543
-theme_override_font_sizes/normal_font_size = 14
+[node name="RichTextLabel" type="RichTextLabel" parent="Peaceandquietgraph5"]
+offset_left = -71.757576
+offset_top = -171.65892
+offset_right = 83.393974
+offset_bottom = -131.65892
+theme_override_font_sizes/normal_font_size = 13
 text = "	ENDING 5:
  PEACE AND QUIET"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="DEATHLABELS" type="RichTextLabel" parent="."]
 texture_filter = 1
 offset_left = 721.0
 offset_top = 565.0
@@ -203,5 +213,54 @@ offset_bottom = 649.0
 theme_override_colors/default_color = Color(1, 0.6039216, 0.3529412, 1)
 theme_override_font_sizes/normal_font_size = 35
 script = ExtResource("5_5hnc2")
+
+[node name="SNEAK100graph2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(466, 393.5)
+scale = Vector2(1, 1.0044643)
+texture = ExtResource("5_ubvbi")
+script = ExtResource("9_hr82h")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SNEAK100graph2"]
+texture_filter = 1
+offset_left = -36.0
+offset_top = -151.82222
+offset_right = 54.0
+offset_bottom = -111.82222
+theme_override_font_sizes/normal_font_size = 13
+text = "ENDING 2:
+SNEAK 100"
+
+[node name="Dramaticfinishgraph3" type="Sprite2D" parent="."]
+position = Vector2(598, 378)
+texture = ExtResource("7_ilihb")
+script = ExtResource("11_mxkwu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dramaticfinishgraph3"]
+texture_filter = 1
+offset_left = -58.0
+offset_top = -170.0
+offset_right = 103.0
+offset_bottom = -130.0
+theme_override_font_sizes/normal_font_size = 12
+text = "	ENDING 3:
+DRAMATIC FINISH"
+
+[node name="STURDYgraph4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(730, 377)
+scale = Vector2(1, 1.0078125)
+texture = ExtResource("8_aeaj8")
+script = ExtResource("13_gk6lt")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="STURDYgraph4"]
+offset_left = -37.0
+offset_top = -170.66666
+offset_right = 106.0
+offset_bottom = -130.66666
+theme_override_font_sizes/normal_font_size = 14
+text = "ENDING 4:
+ STURDY
+"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

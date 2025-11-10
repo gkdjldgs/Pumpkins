@@ -52,7 +52,7 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 3.5:
 				autoload.stage = -1
-				
+				autoload.ending1 = true
 				return 'You look at the edge of the cliff, its only 40 meters down, not that big of a deal.. 
 				You decide to go the long and boring way down. Which takes mutiple hours of cautiously
 				sliding down plastic slushies and toilet paper piles, but at last you make it to the exit.
@@ -118,7 +118,7 @@ func command(input: String) -> String:
 	
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
-				
+				autoload.Ending5 = true
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
 				He aims a kick towards you, his intent clear as day..
@@ -263,7 +263,7 @@ func command(input: String) -> String:
 			
 			elif autoload.stage == 4.2:
 				autoload.stage = -1
-				
+				autoload.Ending1 = true
 				return'You start rolling up in a ball, building up kinetic energy
 				He lunges at you, trying visicously to stop you
 				Less like a pumpkin and more like a hedgehog you blast through and up the fireplace
@@ -276,8 +276,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
-				autoload.deaths += 1
-				
+				autoload.Ending5 = true
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
 				He aims a kick towards you, his intent clear as day..
@@ -292,7 +291,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 5:
 				autoload.stage = -1
-				
+				autoload.Ending2 = true
 				return "You quietly roll through the house, 
 				and with the power of even more property damage
 				(You jump through his window) you've done it, you've ESCAPED!!
@@ -306,7 +305,7 @@ func command(input: String) -> String:
 				
 			elif autoload.stage == 6:
 				autoload.stage = -1
-				
+				autoload.Ending4 = true
 				return 'At the last second you muster up the courage to act.
 				Unfortunately for you that mainly comes down to bouncing up and
 				down a lot (but youre really good at it)
@@ -392,7 +391,7 @@ func command(input: String) -> String:
 
 			elif autoload.stage == 4.3:
 				autoload.stage = -1
-				
+				autoload.Ending5 = true
 				return 'Your head hurts..
 				You see him angrerly walk towards you..
 				He aims a kick towards you, his intent clear as day..
